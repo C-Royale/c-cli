@@ -1,0 +1,31 @@
+{
+  "name": "jelement-cli",
+  "version": "1.0.0",
+  "description": "",
+  "preferGlobal": true,
+  "bin": {
+    "jelement": "bin/jelement.js",
+    "jelement-create": "bin/jelement-create.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.12.2",
+    "inquirer": "^4.0.2",
+    "uppercamelcase": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
