@@ -3,9 +3,16 @@
 const program = require('commander')
 
 program
-    .usage('<template-name> [project-name]')
     .option('-t --type <type>', 'Component type', /^(table|form|detail)$/i, 'table')
-    .parse(process.argv)
+
+program.on('--help', function () {
+    console.log('  Examples:');
+    console.log('');
+    console.log('    $ jelement c -t form DassForm / jelement create --type=form DassForm');
+    console.log('    $ jelement c -h');
+    console.log('');
+});
+program.parse(process.argv)
 
 if (!program.args[0]) {
     console.error('[组件名]必填 - Please enter new component name');
