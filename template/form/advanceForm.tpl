@@ -1,5 +1,7 @@
 <template>
-  <div class="el-form"></div>
+  <div class="el-form">
+    advanceForm
+  </div>
 </template>
 
 <script>
