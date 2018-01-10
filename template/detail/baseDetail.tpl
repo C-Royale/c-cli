@@ -1,5 +1,7 @@
 <template>
-  <div class="el-table"></div>
+  <div class="el-table">
+    baseDetail
+  </div>
 </template>
 
 <script>
