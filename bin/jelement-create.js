@@ -8,6 +8,7 @@ const uppercamelcase = require('uppercamelcase');
 const chalk = require('chalk');
 
 program
+    .description('在当前目录创建模板')
     .on('--help', function () {
         console.log('  Examples:');
         console.log('');
@@ -99,10 +100,8 @@ function handleTemplate() {
         .then(answer => {
             const templatePath = path.resolve(__dirname, '../template', answer.path);
             const content = fs.readFileSync(templatePath, 'utf8');
-            fs.writeFileSync(to, content, (err) => {
-                if (err) throw err;
-                console.log('It\'s saved!');
-            })
+            fs.writeFileSync(to, content, 'utf8')
+            console.log(chalk.green('模板已生成...'))
         })
 }
 
