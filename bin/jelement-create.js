@@ -75,13 +75,13 @@ function accordingToSpecificTemplate(baseSelected) {
     }
     switch (baseSelected) {
         case 'form':
-            prompt.choices = [{ name: '基础表单模板', value: 'form/baseForm.tpl' }, { name: '高级表单模板', value: 'form/advanceForm.tpl' }]
+            prompt.choices = [{ name: '运营后台-基础表单', value: 'form/baseForm.tpl' }, { name: '运营后台-高级表单', value: 'form/advanceForm.tpl' }]
             break;
         case 'table':
-            prompt.choices = [{ name: '基础列表模板', value: 'table/baseTable.tpl' }, { name: '高级表单模板', value: 'table/advanceTable.tpl' }]
+            prompt.choices = [{ name: '运营后台-基础列表', value: 'table/baseTable.tpl' }, { name: '运营后台-高级表单', value: 'table/advanceTable.tpl' }]
             break;
         case 'detail':
-            prompt.choices = [{ name: '基础详情模板', value: 'detail/baseDetail.tpl' }, { name: '高级详情模板', value: 'detail/advanceDetail.tpl' }]
+            prompt.choices = [{ name: '运营后台-基础详情', value: 'detail/baseDetail.tpl' }, { name: '运营后台-高级详情', value: 'detail/advanceDetail.tpl' }]
             break;
     }
 
