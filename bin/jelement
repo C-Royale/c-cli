@@ -1,0 +1,15 @@
+#! /usr/bin/env node
+
+var program = require('commander')
+
+const createCli = require('../lib/create')
+
+program
+  .version(require('../package').version)
+  .option('create', 'generate a new bussiness component template')
+  .option('c', 'generate a new bussiness component template')
+  .parse(process.argv)
+
+  if (program.create || program.c) {
+    createCli()
+  }
