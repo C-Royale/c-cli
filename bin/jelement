@@ -2,14 +2,21 @@
 
 var program = require('commander')
 
-const createCli = require('../lib/create')
+const create = require('../lib/create')
+const format = require('../lib/format')
 
 program
   .version(require('../package').version)
   .option('create', 'generate a new bussiness component template')
   .option('c', 'generate a new bussiness component template')
+  .option('format', 'format code by prettier eslint')
+  .option('f', 'format code by prettier eslint')
   .parse(process.argv)
 
   if (program.create || program.c) {
-    createCli()
+    create()
+  }
+
+  if (program.format || program.f) {
+    format(process.argv)
   }
