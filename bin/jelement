@@ -4,6 +4,7 @@ var program = require('commander')
 
 const create = require('../lib/create')
 const format = require('../lib/format')
+const init = require('../lib/init')
 
 program
   .version(require('../package').version)
@@ -11,12 +12,27 @@ program
   .option('c', 'generate a new bussiness component template')
   .option('format', 'format code by prettier eslint')
   .option('f', 'format code by prettier eslint')
+  .option('init', 'init the frontend project of JD Cloud based on VUE')
+  .option('init --no-auto-install', 'init the frontend project of JD Cloud based on VUE')
+  .description('JElement 工具集')
+  .on('--help', function () {
+    console.log('  Examples:')
+    console.log('');
+    console.log('    $ jelement c/create')
+    console.log('    $ jelement f/format ./src/test.js')
+    console.log('    $ jelement init --no-auto-install')
+    console.log('');
+  })
   .parse(process.argv)
 
-  if (program.create || program.c) {
-    create()
-  }
+if (program.create || program.c) {
+  create()
+}
 
-  if (program.format || program.f) {
-    format(process.argv)
-  }
+if (program.format || program.f) {
+  format(process.argv)
+}
+
+if (program.init) {
+  init(process.argv)
+}
