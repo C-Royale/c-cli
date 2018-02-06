@@ -19,6 +19,10 @@ jelement f/format ./src/test.js
 ```
 > 如果未发现 eslint 配置文件，则采用默认设置
 
+```js
+jelement init
+```
+
 ## Help
 
 ```js
