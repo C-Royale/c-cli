@@ -1,10 +1,11 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
 var program = require('commander')
 
 const create = require('../lib/create')
 const format = require('../lib/format')
 const init = require('../lib/init')
+const generate = require('../lib/generate')
 
 program
   .version(require('../package').version)
@@ -17,16 +18,16 @@ program
   .description('JElement 工具集')
   .on('--help', function () {
     console.log('  Examples:')
-    console.log('');
+    console.log('')
     console.log('    $ jelement c/create')
     console.log('    $ jelement f/format ./src/test.js')
     console.log('    $ jelement init --no-auto-install')
-    console.log('');
+    console.log('')
   })
   .parse(process.argv)
 
 if (program.create || program.c) {
-  create()
+  generate()
 }
 
 if (program.format || program.f) {
