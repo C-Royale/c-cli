@@ -2,7 +2,6 @@
 
 var program = require('commander')
 
-const create = require('../lib/create')
 const format = require('../lib/format')
 const init = require('../lib/init')
 const generate = require('../lib/generate')
