@@ -5,14 +5,14 @@ The component generates the command line tool.
 ```js
 npm install -g jelement-cli
 
-``` 
+```
 
 ## Usage
 
 ```js
 jelement c/create
 ```
-![demo](https://j.gifs.com/RojNXY.gif)
+![demo](https://j.gifs.com/jqNZoz.gif)
 
 ```js
 jelement f/format ./src/test.js
