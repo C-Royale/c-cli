@@ -1,10 +1,10 @@
 module.exports = {
   base: `
 <template>
-  {{temScope}}
+  <%=temScope%>
 </template>
 <script>
-{{scriptScope}}
+<%=scriptScope%>
 </script>
 `,
   layout: {
@@ -31,7 +31,7 @@ module.exports = {
     </div>
     <div class="jc-page-content">
       <!--content-->
-      {{temScope}}
+      <%=temScope%>
       <!--content end-->
     </div>
   </div>`,
@@ -59,12 +59,12 @@ module.exports = {
       <el-tabs type="border-card">
         <el-tab-pane label="Tab1 页面">
           <!--content-->
-          {{temScope}}
+          <%=temScope%>
           <!--content end-->
         </el-tab-pane>
         <el-tab-pane label="Tab2 页面">
           <!--content-->
-          {{temScope}}
+          <%=temScope%>
           <!--content end-->
         </el-tab-pane>
       </el-tabs>
@@ -97,7 +97,7 @@ module.exports = {
         </div>
         <div class="jc-section-content">
           <!--content-->
-          {{temScope}}
+          <%=temScope%>
           <!--content end-->
         </div>
       </div>
@@ -107,7 +107,7 @@ module.exports = {
         </div>
         <div class="jc-section-content">
           <!--content-->
-          {{temScope}}
+          <%=temScope%>
           <!--content end-->
         </div>
       </div>
@@ -142,7 +142,7 @@ module.exports = {
             </div>
             <div class="jc-section-content">
               <!--content-->
-              {{temScope}}
+              <%=temScope%>
               <!--content end-->
             </div>
           </div>
@@ -154,7 +154,7 @@ module.exports = {
             </div>
             <div class="jc-section-content">
               <!--content-->
-              {{temScope}}
+              <%=temScope%>
               <!--content end-->
             </div>
           </div>
@@ -164,7 +164,7 @@ module.exports = {
             </div>
             <div class="jc-section-content">
               <!--content-->
-              {{temScope}}
+              <%=temScope%>
               <!--content end-->
             </div>
           </div>
@@ -202,7 +202,7 @@ module.exports = {
     </div>
     <div class="jc-page-content">
       <!--content-->
-      {{temScope}}
+      <%=temScope%>
       <!--content end-->
     </div>
   </div>`,
@@ -236,12 +236,12 @@ module.exports = {
       <el-tabs type="border-card">
         <el-tab-pane label="Tab1 页面">
           <!--content-->
-          {{temScope}}
+          <%=temScope%>
           <!--content end-->
         </el-tab-pane>
         <el-tab-pane label="Tab2 页面">
           <!--content-->
-          {{temScope}}
+          <%=temScope%>
           <!--content end-->
         </el-tab-pane>
       </el-tabs>
@@ -280,7 +280,7 @@ module.exports = {
         </div>
         <div class="jc-section-content">
           <!--content-->
-          {{temScope}}
+          <%=temScope%>
           <!--content end-->
         </div>
       </div>
@@ -290,7 +290,7 @@ module.exports = {
         </div>
         <div class="jc-section-content">
           <!--content-->
-          {{temScope}}
+          <%=temScope%>
           <!--content end-->
         </div>
       </div>
@@ -331,7 +331,7 @@ module.exports = {
             </div>
             <div class="jc-section-content">
               <!--content-->
-              {{temScope}}
+              <%=temScope%>
               <!--content end-->
             </div>
           </div>
@@ -343,7 +343,7 @@ module.exports = {
             </div>
             <div class="jc-section-content">
               <!--content-->
-              {{temScope}}
+              <%=temScope%>
               <!--content end-->
             </div>
           </div>
@@ -353,7 +353,7 @@ module.exports = {
             </div>
             <div class="jc-section-content">
               <!--content-->
-              {{temScope}}
+              <%=temScope%>
               <!--content end-->
             </div>
           </div>

@@ -2,7 +2,8 @@
 The component generates the command line tool.
 
 ## Install
-```js
+前提: [Node.js](https://nodejs.org/en/) (>=8.x preferred), npm version 5+.
+```bash
 npm install -g jelement-cli
 
 ```
